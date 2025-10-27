@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link href="/styles/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header role="banner">
-      <h1>Welcome to my Website!</h1>
-    </header>
-    <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuval Zeratski | Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
 
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="hero-section">
+    <div class="hero-text">
+      <h2>Hi, I'm Yuval 👋</h2>
+      <p>
+      <br>I’m a student in the <strong>MATAR Excellence Program</strong> and 
+      <strong>Business Administration</strong> at the <strong>Hebrew University</strong>.<br><br>
+      I’m passionate about combining <strong>technology, design, and social impact</strong>.<br><br>
+      Here you can explore some of the projects I’ve created — each one built 
+      to make ideas come alive through data and design. <br>
+      </p>
+
+      <a href="./projects.html" class="hero-button">See My Projects</a>
+      <button id="contact-btn" class="hero-button secondary">Contact Me</button>
+
+      <div id="contact-box" class="contact-box hidden">
+        <h3>Let's Connect!📧</h3>
+        <p> yuval.zaretski@mail.huji.ac.il </p>
       </div>
-    </main>
+    </div>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="hero-image">
+      <img
+        src="./IMG-8860.WEBP"
+        alt="my portrait"
+      />
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Yuval Zeratski | All rights reserved</p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
 </html>

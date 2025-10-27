@@ -1,19 +1,11 @@
-console.log("Hello World!");
-setupCounter();
+console.log("✅ JavaScript is running!");
 
-function setupCounter() {
-  let count = 0;
+// CONTACT BOX TOGGLE
+const contactBtn = document.getElementById("contact-btn");
+const contactBox = document.getElementById("contact-box");
 
-  function increment() {
-    count++;
-    document.querySelector("#count").innerHTML = count;
-  }
-
-  function decrement() {
-    count--;
-    document.querySelector("#count").innerHTML = count;
-  }
-
-  document.querySelector("#increment").addEventListener("click", increment);
-  document.querySelector("#decrement").addEventListener("click", decrement);
+if (contactBtn && contactBox) {
+  contactBtn.addEventListener("click", () => {
+    contactBox.classList.toggle("hidden");
+  });
 }
